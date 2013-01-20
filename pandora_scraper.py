@@ -2,6 +2,11 @@ from selenium import webdriver
 # For keyboard keys
 from selenium.webdriver.common.keys import Keys
 
+# Headless display
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(800, 600))
+display.start()
+
 # Setup
 driver = webdriver.Firefox()
 driver.get("http://www.pandora.com")
@@ -16,4 +21,5 @@ signinLink.click()
 # elem.send_keys("tryingout")
 # elem.send_keys(Keys.RETURN)
 
-#driver.close()
+driver.close()
+display.stop()
