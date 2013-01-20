@@ -1,0 +1,9 @@
+
+* Scraper
+** Selenium
+   Need to run the selenium server, a jar file, for selenium to work.
+
+   Instructions:
+   http://selenium-python.readthedocs.org/en/latest/installation.html
+
+   
